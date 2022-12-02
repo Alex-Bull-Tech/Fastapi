@@ -6,9 +6,12 @@ from .config import settings
 from fastapi.middleware.cors import CORSMiddleware
 # models.Base.metadata.create_all(bind=engine)
 
-origins = ["*"]
+
 
 app = FastAPI()
+
+origins = ["*"]
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -25,5 +28,5 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"message": "Welocome to my API"}
+    return {"message": "Welocome to my API  xD"}
      
