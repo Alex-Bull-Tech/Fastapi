@@ -28,5 +28,5 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"message": "Artiom you are a FUCKER ! ! ! ! !"}
+    return {"message": "Hello there and welocome to my first app!"}
      
